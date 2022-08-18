@@ -1,0 +1,87 @@
+@font-face {
+    font-family: bjpg;
+    src: url(https://use.typekit.net/af/065c26/00000000000000007735a6c8/30/l?subset_id=2&fvd=i5&v=3) format("woff2"), url(https://use.typekit.net/af/065c26/00000000000000007735a6c8/30/d?subset_id=2&fvd=i5&v=3) format("woff"), url(https://use.typekit.net/af/065c26/00000000000000007735a6c8/30/a?subset_id=2&fvd=i5&v=3) format("opentype");
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: bjpg;
+    src: url(https://use.typekit.net/af/54d47a/000000000000000000017750/27/l?subset_id=2&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/54d47a/000000000000000000017750/27/d?subset_id=2&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/54d47a/000000000000000000017750/27/a?subset_id=2&fvd=n4&v=3) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: auto;
+}
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+
+    /* grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows:repeat(6, 1fr);
+    grid-template-areas: 'sidebar header header'
+    'sidebar content content'
+    'sidebar content content'
+    'sidebar content content'
+    'sidebar content content'
+    'sidebar footer footer'
+    ; */
+    gap: 5px;
+    border: 0.2px solid aliceblue;
+    border-radius: 10px;
+} 
+
+.container .header{
+    display: flex;
+    /* grid-area: header; */
+    background-color: #F7F8F9;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 50px auto;
+}
+.container .sidebar{
+    display: flex;
+    /* grid-area: sidebar; */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin: 50px auto;
+    gap: 20px;
+}
+
+
+
+.container .content{
+    display: flex;
+    /* grid-area: content; */
+    padding: 10px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr) ; */
+    align-items: flex-end;
+    justify-items: center;
+    /* grid-area: content; */
+    margin: 0%;
+    width: 70%;
+    height: 400px;
+    background-color: blueviolet;
+} 
+
+
+
+.footer{
+    display: flex;
+    grid-area: footer;
+}
